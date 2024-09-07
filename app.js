@@ -1,16 +1,17 @@
-document.addEventListener("DOMContentLoaded", () => {
+//document.addEventListener("DOMContentLoaded", () => {
 
-    const images = document.querySelectorAll("img");
+//const images = document.querySelectorAll("img");
    
-    for(const image of images) {
-        console.log(image);  // Correct reference to the 'image' variable
+    //for(const image of images) {
+        //console.log(image);  // Correct reference to the 'image' variable
          
-        fetch("https://dog.ceo/api/breeds/image/random")
-        .then(response => response.json())
-        .then(data => {
-            image.src = data.message;  // Assigning the fetched URL to 'image.src'
-            image.width = 100;
-            image.height = 100;
-        })
-    }
-})
+        //fetch("https://dog.ceo/api/breeds/image/random")
+      //  .then(response => response.json())
+      //  .then(data => {
+        //    image.src = data.message;  // Assigning the fetched URL to 'image.src'
+         //   image.width = 100;
+         //   image.height = 100;
+       // })
+  //  }
+//})
+
