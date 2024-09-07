@@ -6,8 +6,9 @@ body {
 }  
 
  body{
-background-color: aqua;
+background-color: darkgoldenrod;
  }
+
 
 #logo{
     margin: 1px;
@@ -30,7 +31,7 @@ margin: 0px;
 
 body > header {
     margin: auto;
-    background-color: goldenrod;
+    background-color: tomato;
     color: aq;
     display: flex;
     height: 20vh;
