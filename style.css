@@ -65,7 +65,8 @@ border-radius: 20%;
 body > main article {
     width:60%;
     margin: auto;
-    background-color: aqua;
+    
+    color: aliceblue;
 }
 #main-content{
     display: flex;
