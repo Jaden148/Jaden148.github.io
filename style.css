@@ -7,7 +7,7 @@ body {
 
  body{
 
-background-image: url(image.png);
+background-image: url(Goku.jpeg);
 background-repeat: no-repeat ;
 background-position: center;
 background-attachment: fixed;
@@ -76,7 +76,7 @@ border-radius: 20%;
 body > main article {
     width:60%;
     margin: auto;
-    background-color: gray;
+    
 
    
       
