@@ -73,9 +73,14 @@ body > main article {
     margin: auto;
     background-color: gray;
 
-    background-image: url();
-   
+    background-image: url(Goku.jpg);
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+      
 }
+
 #main-content{
     display: flex;
     justify-content: space around ;
