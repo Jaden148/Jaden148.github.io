@@ -5,12 +5,14 @@ body {
     font-family: fantasy
 }  
 
- 
+ body{
+background-color: aqua;
+ }
 
 #logo{
     margin: 1px;
     padding: 3px;
-    font-family:  t ;
+    font-family:  fantasy ;
     width: 16%;
     border-radius: 10%
    
