@@ -30,13 +30,14 @@ margin: 0px;
 
 body > header {
     margin: auto;
-    background-color: darkgoldenrod
+    background-color: goldenrod;
     color: aquamarine;
     display: flex;
     height: 20vh;
     align-items: center;
     justify-content: space-around ;
     flex-direction: row;
+
 }
 
 #nav-ul{
