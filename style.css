@@ -30,8 +30,8 @@ margin: 0px;
 
 body > header {
     margin: auto;
-    background-color: wheat;
-    color: aliceblue;
+    background-color: goldenrod;
+    color: aquamarine;
     display: flex;
     height: 20vh;
     align-items: center;
