@@ -64,7 +64,7 @@ border-radius: 20%;
 body > main article {
     width:60%;
     margin: auto;
-    background-color: tomato;
+    background-color: red;
 }x
 #main-content{
     display: flex;
