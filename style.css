@@ -64,8 +64,8 @@ border-radius: 20%;
 body > main article {
     width:60%;
     margin: auto;
-    background-color: aqua;
-}
+    background-color: tomato;
+}x
 #main-content{
     display: flex;
     justify-content: space around ;
