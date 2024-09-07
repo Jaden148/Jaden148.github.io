@@ -6,7 +6,7 @@ body {
 }  
 
  body{
-background-color: darkgoldenrod;
+background-color: gray;
  }
 
 
@@ -88,7 +88,7 @@ h2 {
 }
 
 body > footer{
-    background-color: greenyellow;
+    background-color: tomato;
     display: flex;
 
 }
