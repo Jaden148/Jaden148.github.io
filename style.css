@@ -6,7 +6,7 @@ body {
 }  
 
  body{
-background-color: tomato
+background-color: aqua;
  }
 
 #logo{
@@ -31,7 +31,7 @@ margin: 0px;
 body > header {
     margin: auto;
     background-color: goldenrod;
-    color: aquamarine;
+    color: aq;
     display: flex;
     height: 20vh;
     align-items: center;
@@ -64,11 +64,7 @@ border-radius: 20%;
 body > main article {
     width:60%;
     margin: auto;
-    background-color: tomato;
-    color: antiquewhite;
-    display: flex;
-    justify-content: space around ;
-
+    background-color: aqua;
 }
 #main-content{
     display: flex;
@@ -90,7 +86,7 @@ h2 {
 }
 
 body > footer{
-    background-color: darkgoldenrod;
+    background-color: greenyellow;
     display: flex;
 
 }
