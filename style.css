@@ -30,7 +30,7 @@ margin: 0px;
 
 body > header {
     margin: auto;
-    background-color: goldenrod;
+    background-color: darkgoldenrod
     color: aquamarine;
     display: flex;
     height: 20vh;
@@ -86,7 +86,7 @@ h2 {
 }
 
 body > footer{
-    background-color: greenyellow;
+    background-color: darkgoldenrod;
     display: flex;
 
 }
