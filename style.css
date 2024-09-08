@@ -1,17 +1,18 @@
-body {
+* {
     margin: 0;
-  
-  
-    font-family: fantasy
-}  
 
- body{
-
-background-image: url('Goku.jpeg');
-background-repeat: no-repeat ;
-background-position: center;
-background-attachment: fixed;
-background-size: cover;
+}
+body{
+    background: url('goku1.jpg');
+    background-repeat: no-repeat ;
+    background-position: center;
+    /* TRY TO USE the background attachment fixed or not
+    That depends on your choice.
+    */
+    /* background-attachment: fixed; */
+    background-size: cover;
+    height: 100%;
+    font-family: fantasy;
  }
 
 
@@ -126,4 +127,3 @@ img {
     color: white;
     text-decoration: none;
 } 
-
