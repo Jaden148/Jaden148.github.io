@@ -1,199 +1,183 @@
 * {
-    margin: 0;
-
-}
-body{
-    background: url('image.png');
-    background-repeat: no-repeat ;
-    background-position: center;
-    /* TRY TO USE the background attachment fixed or not
-    That depends on your choice.
-    */
-    /* background-attachment: fixed; */
-    background-size: cover;
-    height: 100%;
-    font-family: fantasy;
- }
-
-
-#logo{
-    margin: 1px;
-    padding: 3px;
-    font-family:  fantasy ;
-    width: 16%;
-    border-radius: 10%
-    
-    
-}
-#logo{
-    font-size: 250%;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-cite > a {
-    display: inline-block;
-    width: 100px;
-    height: 50px;
-    
-} 
-
-ul {
-margin: 0px; 
+body {
+  background: url(); /* Add your background image URL here */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: fantasy, sans-serif;
 }
+
+#logo {
+  margin: 1px;
+  padding: 3px;
+  font-size: 250%;
+  width: 16%;
+  border-radius: 10%;
+}
+
+
 
 body > header {
-    margin: auto;
-    background-color: tomato;
-    color: aq;
-    display: flex;
-    height: 20vh;
-    align-items: center;
-    justify-content: space-around ;
-    flex-direction: row;
-
+  background-color: tomato;
+  color: aqua;
+  display: flex;
+  height: 20vh;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#nav-ul{
-    display: flex;
+#nav-ul {
+  display: flex;
+  list-style: none;
 }
+
 #nav-ul > li {
-    padding: 8px;
-    margin: 16px;
-}
-
-body > header > nav > ul {
-    list-style: none;
-    text-decoration: none;
+  padding: 8px;
+  margin: 16px;
 }
 
 .navbutton {
-color: white;
-text-decoration: none;
-padding: 12px;
-border: 1px solid white;
-border-radius: 20%; 
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 20%;
 }
 
-body > main article {
-    width:60%;
-    margin: auto;
-    color: honeydew;
-    border-color: aqua;
-   justify-content: space-around;
-    
-
-   
-      
-}
-
-#main-content{
-    display: flex;
-    justify-content: space around ;
-
+#main-content {
+  display: flex;
+  justify-content: space-around;
 }
 
 #main-content > div {
-width:70%;
-
+  width: 70%;
 }
 
-form {
-text-align: center;
-color: aliceblue;
+body > main article {
+  width: 60%;
+  margin: auto;
+  color: black;
+  border-color: aqua;
 }
 
-h2 {
+form, h2 {
   text-align: center;
-  color: aliceblue;
-
-}
-
-body > footer{
-    background-color: tomato;
-    display: flex;
-    
-
+  color: black;
 }
 
 img {
-    border-radius: 50%;
-}
-#footer-ul > div >li {
-    margin-left:12px ;
+  border-radius: 50%;
 }
 
-#footer-ul {
-    display:flex;
-    list-style: none;
-}
-#footer-ul > div > li {
-    margin-left: 12px;
-  
-}
-#footer-ul > div > li > a {
-    color: white;
-    text-decoration: none;
-} 
-
-h5 {
-    color: aliceblue;
-}
-
-
-/* The side navigation menu */
+/* Interactive Sidebar Styles */
 .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  /* Sidebar links */
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-  }
-  
-  /* Active/current link */
-  .sidebar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  /* Links on mouse-over */
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-  
-  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-  div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-  }
-  
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
+  position: fixed;
+  left: -250px;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #f1f1f1;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 2px 0;
+}
+
+#main-content {
+  transition: margin-left 0.3s ease-in-out;
+}
+
+#main-content.sidebar-active {
+  margin-left: 250px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer h2 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 20px;
+  display: flex;
+  gap: 20px;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+  font-size: 16px;
+}
+
+footer ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Footer responsive for smaller devices */
+@media (max-width: 768px) {
+  footer nav {
+      flex-direction: column;
   }
 
+  footer ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
